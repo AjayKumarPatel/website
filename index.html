@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active store</title>
+    <link rel="stylesheet" href="activestore.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="" width="125px">
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+               <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col2">
+                    <h1>Give your shopping<br>A new style !</h1>
+                    <p>shop here with amazing collection of the<br>Latest Fashion!</p>
+                    <a href="#" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col2">
+                    <img src="images/image1.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- feature categories -->
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col3">
+                <img src="images/category-1.jpg">
+            </div>
+            <div class="col3">
+                <img src="images/category-2.jpg">
+            </div>
+            <div class="col3">
+                <img src="images/category-3.jpg">
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- products -->
+<div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col4">
+            <img src="images/product-1.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <p>$50.00</p>
+        </div>
+        <div class="col4">
+            <img src="images/product-1.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <p>$50.00</p>
+        </div>
+        <div class="col4">
+            <img src="images/product-1.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <p>$50.00</p>
+        </div>
+    </div>
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <div class="col4">
+            <img src="images/product-5.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <p>$50.00</p>
+        </div>
+        <div class="col4">
+            <img src="images/product-6.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <p>$50.00</p>
+        </div>
+        <div class="col4">
+            <img src="images/product-7.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <p>$50.00</p>
+        </div>
+        <div class="col4">
+            <img src="images/product-8.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <p>$50.00</p>
+        </div>
+        <div class="row">
+            <div class="col4">
+                <img src="images/product-9.jpg">
+                <h4>Red Printed T-shirt</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col4">
+                <img src="images/product-10.jpg">
+                <h4>Red Printed T-shirt</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col4">
+                <img src="images/product-11.jpg">
+                <h4>Red Printed T-shirt</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col4">
+                <img src="images/product-12.jpg">
+                <h4>Red Printed T-shirt</h4>
+                <p>$50.00</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  -----------offer----------------------------------- -->
+<div class="offer">
+    <div class="small-cotainer">
+        <div class="row">
+            <div class="col2" id="col2">
+                <img src="images/exclusive.png" class="offer-img">
+            </div>
+            <div class="col2">
+                <p>exclusive Available on Active Market</p>
+                <h1>Smart Band 4</h1>
+                <small>The mi smart band 4 features a 45.6% larger<br>
+                    than Mi Band 3 AMOLED color full-touch display with<br>
+                    adjustable brightness,so everything is clear as can be.<br> </small>
+                <a href="#" class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------------BRANDS----------------- -->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col5">
+                <img src="images/logo-godrej.png">
+            </div>
+            <div class="col5">
+                <img src="images/logo-oppo.png">
+            </div>
+            <div class="col5">
+                <img src="images/logo-coca-cola.png">
+            </div>
+            <div class="col5">
+                <img src="images/logo-paypal.png">
+            </div>
+            <div class="col5">
+                <img src="images/logo-philips.png">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------js for togglemenu------------ -->
+<script>
+    var menuItems = document.getElementById("menuItems")
+    menuItems.style.maxHeight = "0px";
+    function menutoggle() {
+        if (menuItems.style.maxHeight == "0px") {
+            menuItems.style.maxHeight = "200px"
+        }
+        else {
+            menuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account|| ActiveMarket</title>
+    <link rel="stylesheet" href="activestore.css">
+</head>
+
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+             <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+        <!-- =================Account =============== -->
+        <div class="account-page">
+           <div class="container">
+               <div class="row">
+                   <div class="col2">
+                       <img src="images/image1.png" width="100%">
+                   </div>
+                   <div class="col2">
+                    <div class="form-container">
+                         <div class="form-btn">
+                             <span onclick="login()">Login</span>
+                             <span onclick="register()">Register</span>
+                             <hr id="Indicator">
+                         </div>
+                         <form id="logForm">
+                             <input type="text"placeholder="Username">
+                             <input type="text" placeholder="Password">
+                             <button type="submit" class="btn">Login</button>
+                             <a href="#">Forgot Password</a>
+                         </form>
+                         <form id="regForm">
+                            <input type="text"placeholder="Username">
+                            <input type="text" placeholder="Email">
+                            <input type="text"placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                
+                        </form>
+                    </div>
+                </div>
+               </div>
+           </div>
+        </div>
+
+<!-- -------------------------BRANDS----------------- -->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col5">
+                <img src="images/logo-godrej.png">
+            </div>
+            <div class="col5">
+                <img src="images/logo-oppo.png">
+            </div>
+            <div class="col5">
+                <img src="images/logo-coca-cola.png">
+            </div>
+            <div class="col5">
+                <img src="images/logo-paypal.png">
+            </div>
+            <div class="col5">
+                <img src="images/logo-philips.png">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------js for togglemenu------------ -->
+<script>
+    var menuItems = document.getElementById("menuItems")
+    menuItems.style.maxHeight = "0px";
+    function menutoggle() {
+        if (menuItems.style.maxHeight == "0px") {
+            menuItems.style.maxHeight = "200px"
+        }
+        else {
+            menuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+<!-- ==================js for toggle form================ -->
+<script>
+    var logForm=document.getElementById("logForm")
+    var regForm=document.getElementById("regForm")
+    var Indicator=document.getElementById("Indicator")
+     function register(){
+         regForm.style.transform = "translateX(0px)";
+         logForm.style.transform = "translateX(0px)";
+         Indicator.style.transform= "translateX(100px)";
+     }
+     function login(){
+         regForm.style.transform = "translateX(300px)";
+         logForm.style.transform = "translateX(300px)";
+         Indicator.style.transform= "translateX(0px)";
+     }
+</script>
+</body>
+
+</html>
